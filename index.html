@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Luas & Keliling Persegi</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Kalkulator Luas & Keliling Persegi</h1>
+    
+    <!-- Hitung Luas Persegi -->
+    <section class="calculator-section">
+        <img src="https://i0.wp.com/rumushitung.com/wp-content/uploads/2021/07/Rumus-Persegi.png?w=867&ssl=1" alt="Deskripsi Gambar">
+        <h2>Hitung Luas Persegi</h2>
+        <p>Menggunakan rumus: Luas = Sisi x Sisi</p>
+        <form id="square-area-form">
+            <label for="sisi">Panjang Sisi:</label>
+            <input type="number" id="luas-sisi" name="sisi" required>
+            <button type="button" id="luas-calculate-button">Hitung Luas</button>
+        </form>
+
+        <div id="luas-result-container">
+            <p>Luas:</p>
+            <p id="luas-result"></p>
+        </div>
+    </section>
+    <button type="button" id="restart-button">Restart</button>
+
+    <!-- Hitung Keliling Persegi -->
+    <section class="calculator-section">
+        <h2>Hitung Keliling Persegi</h2>
+        <p>Menggunakan rumus: Keliling = 4 x Sisi</p>
+        <form id="square-perimeter-form">
+            <label for="sisi">Panjang Sisi:</label>
+            <input type="number" id="keliling-sisi" name="sisi" required>
+            <button type="button" id="keliling-calculate-button">Hitung Keliling</button>
+        </form>
+
+        <div id="keliling-result-container">
+            <p>Keliling:</p>
+            <p id="keliling-result"></p>
+        </div>
+    </section>
+    <button type="button" id="restart-button">Restart</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
